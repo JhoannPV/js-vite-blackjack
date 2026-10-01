@@ -7,7 +7,7 @@
 
 export const crearCarta = (carta, turno, divcartasJugadores) => {
     const imgCarta = document.createElement('img');
-    imgCarta.src = `/assets/cartas/${carta}.png`
+    imgCarta.src = `${import.meta.env.BASE_URL}assets/cartas/${carta}.png`
     imgCarta.classList.add('carta');
     divcartasJugadores[turno].append(imgCarta);
 }
